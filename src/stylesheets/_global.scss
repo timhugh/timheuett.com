@@ -9,39 +9,39 @@ $body-fonts: "Lato", "Helvetica", Sans-Serif;
 
 body,
 body * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-	background: $white;
-	color: $gray;
-  font-size: 125%;
+    background: $white;
+    color: $gray;
+    font-size: 125%;
 
-  animation: fade-in-delay 1.5s;
+    animation: fade-in-delay 1.5s;
 
-  @keyframes fade-in-delay {
-    0%   { opacity: 0; }
-    10%  { opacity: 0; }
-    100% { opacity: 1; }
-  }
+    @keyframes fade-in-delay {
+        0%   { opacity: 0; }
+        10%  { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
-  @media #{$desktop} {
-    font-size: 100%;
-  }
+    @media #{$desktop} {
+        font-size: 100%;
+    }
 }
 
 a {
-	color: $gray;
-  text-decoration: none;
-	cursor: pointer;
+    color: $gray;
+    text-decoration: none;
+    cursor: pointer;
 
-  transition-property: color;
-  transition-duration: .3s;
-  transition-timing-function: ease-in-out;
+    transition-property: color;
+    transition-duration: .3s;
+    transition-timing-function: ease-in-out;
 
-  &:hover {
-    color: $green;
-  }
+    &:hover {
+        color: $green;
+    }
 }

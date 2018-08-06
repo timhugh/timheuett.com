@@ -1,0 +1,13 @@
+{{ define "main" }}
+    <main aria-role="main" class="homepage">
+        <header>
+            <h1 class="title">Tim Heuett</h1>
+            <nav class="social-links">
+                {{ partial "social-icons.html" . }}
+            </nav>
+        </header>
+        <section class="content">
+            {{.Content}}
+        </section>
+    </main>
+{{ end }}

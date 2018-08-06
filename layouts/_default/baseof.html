@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>Tim Heuett - Seattle Web Design</title>
+        <meta content="Tim Heuett is a Seattle-based web developer, and an expert at useless trivia" name="description" />
+        <meta content="Tim Heuett" name="author" />
+
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport" />
+        <meta content="np9swQ0l4xJOzamam9r2NOtW2Fc33vvVulZmRiU_tlg" name="google-site-verification" />
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,100" rel="stylesheet" type="text/css" />
+        {{ $style := resources.Get "stylesheets/main.scss" | toCSS | minify | fingerprint }}
+        <link href="{{ $style.Permalink }}" rel="stylesheet" />
+
+        {{ $js := resources.Get "app.js" | minify | fingerprint }}
+        <script src="{{ $js.Permalink }}" type="text/javascript"></script>
+    </head>
+
+    <body>
+        {{- block "main" . }} {{- end }}
+    </body>
+</html>

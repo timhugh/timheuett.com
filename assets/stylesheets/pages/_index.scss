@@ -1,58 +1,36 @@
 .homepage {
-    animation: fade-in-delay 1.5s;
+    text-align: center;
+    height: 100%;
 
-    @keyframes fade-in-delay {
-        0%   { opacity: 0; }
-        10%  { opacity: 0; }
-        100% { opacity: 1; }
-    }
+    & > .header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-    header, .content {
-        padding: 40px 20px;
-        text-align: center;
-    }
+        min-height: 65%;
 
-    header {
         .title {
-            font-size: 200%;
-            margin-bottom: 15px;
+            margin-bottom: 60px;
 
-            // Slightly bolder text for retina displays using a shadow.
-            // NOTE: this is only necessary because Lato doesn't
-            // have an appropriate weight.
-            @media (-webkit-min-device-pixel-ratio: 2),
-            (min-resolution: 192dpi) {
-                text-shadow: 0 0 1px lighten($gray, 30);
+            h1 {
+                margin-bottom: 10px;
             }
         }
-
-        .social-links a {
-            font-size: 210%;
-            margin-left: 0.1em;
-        }
     }
 
-    .content p {
-        line-height: 2;
-    }
-
-    @media #{$desktop} {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-
-        min-height: 100%;
-
-        header, .content {
-            flex-grow: 1;
-            padding: 20px;
+    & > .featured-projects {
+        & > .title {
+            margin-bottom: 20px;
         }
-        header {
-            text-align: right;
-        }
-        .content {
-            text-align: left;
+        & > .content {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            & > article {
+                margin: 40px;
+            }
         }
     }
 }

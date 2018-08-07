@@ -1,16 +1,6 @@
-$break-point: 667px;
-$mobile: 'screen and (max-width: #{$break-point})';
-$desktop: 'screen and (min-width: #{$break-point + 1px})';
-
-$white: #fff;
-$gray: #666;
-$green: #84c66f;
-
-$heading-fonts: "Lato", "Helvetica", Sans-Serif;
-$body-fonts: "Lato", "Helvetica", Sans-Serif;
-
 html, body {
     height: 100%;
+    margin: 0;
 }
 
 html, body, body * {
@@ -19,42 +9,7 @@ html, body, body * {
     padding: 0;
 }
 
-body {
-    background: $white;
-    color: $gray;
-    font-size: 125%;
-
-    @media #{$desktop} {
-        font-size: 100%;
-    }
-}
-
-h1 {
-    font-family: $heading-fonts;
-    font-weight: 100;
-    text-transform: uppercase;
-}
-
-p {
-    font-family: $body-fonts;
-    font-weight: 300;
-    line-height: 1.4;
-
-    a {
-        border-bottom: solid 1px $green;
-    }
-}
-
 a {
-    color: $gray;
-    text-decoration: none;
+    text-decoration: underline;
     cursor: pointer;
-
-    transition-property: color;
-    transition-duration: .3s;
-    transition-timing-function: ease-in-out;
-
-    &:hover {
-        color: $green;
-    }
 }

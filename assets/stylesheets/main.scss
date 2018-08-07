@@ -1,6 +1,12 @@
 @import 'reset';
+
+@import 'breakpoints';
+@import 'colors';
 @import 'socialicons';
+@import 'fonts';
 
 @import 'global';
 
 @import 'pages/index';
+
+@import 'pages/projects/_tile.scss';

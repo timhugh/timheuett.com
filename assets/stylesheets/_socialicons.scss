@@ -22,12 +22,15 @@
         content: '\e900';
     }
     &--github:before {
-        content: '\e901';
+        content: '\e904';
     }
     &--linkedin:before {
-        content: '\e902';
+        content: '\e901';
+    }
+    &--flickr:before {
+        content: '\e903';
     }
     &--email:before {
-        content: '\e903';
+        content: '\e902';
     }
 }

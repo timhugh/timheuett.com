@@ -19,18 +19,18 @@
 
 .socialicon {
     &--twitter:before {
-        content: '\e900';
+        content: '\e902';
     }
     &--github:before {
-        content: '\e904';
+        content: '\e900';
     }
     &--linkedin:before {
-        content: '\e901';
-    }
-    &--flickr:before {
         content: '\e903';
     }
+    &--instagram:before {
+        content: '\e904';
+    }
     &--email:before {
-        content: '\e902';
+        content: '\e901';
     }
 }

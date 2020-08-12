@@ -1,5 +1,1 @@
-# TimHeuett.com
-
-## Intro
-
-This is the source for my personal website, at [TimHeuett.com](http://www.timheuett.com).
+This is the source for my personal website, at [TimHeuett.com](http://www.timheuett.com). The (hopefully) current production build is a git submodule, and that repo is located at https://github.com/timhugh/timhugh.github.io
